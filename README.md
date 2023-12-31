@@ -1,0 +1,1 @@
+PharmSys is a full stack web application made using HTML, CSS, Javascript, ExpressJS and MYSQL. The database has not been deployed so the website is not public but you can check out the frontend by deploying it on nodejs. Make sure you have ejs and express packages installed before deploying.
