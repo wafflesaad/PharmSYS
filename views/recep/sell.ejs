@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmSys</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/recep/sell.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/plus.png">
+
+</head>
+<body>
+    <nav>
+        <div id="navheading">
+            <h1 >PharmSys</h1>
+            <img src="/images/plus.png" alt="A Hospital Sign">
+        </div>
+        
+        <a class="navbtn" href="/recep/sell">Sell</a>
+        <a class="navbtn" href="/recep/med">Medicines</a>
+        <a class="navbtn" href="/recep/cust">Customers</a>
+
+        <a class="navbtn" href="/manager">Manager Mode</a>
+    </nav>
+
+    <section id="head">
+        <h1 id="sellmed">Sell medicine</h1>
+
+        <div class="cont">
+            <div class="item">
+                <h2>Customer CNIC: </h2>
+                <input type="text" id="cnicfield">
+            </div>
+            <div class="item">
+                <h2>Medicine name: </h2>
+                <input type="text" id="medfield">
+            </div>
+            <div class="item">
+                <h2>Amount: </h2>
+                <input type="number" min="0" id="amount">
+            </div>
+            <div class="item">
+                <button id="addbtn">Add Medicine</button>
+                <button id="sellbtn">Sell</button>
+
+            </div>
+            <p id="status"></p>
+
+            <div id="bill">
+                <h1>Bill</h1>
+                <div id="billitems">
+                    
+                </div>
+                <div class="total">
+                    <h1>Total: </h1>
+                    <p id="totalamount"></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="/scripts/recep/sell.js"></script>
+</body>
+</html>

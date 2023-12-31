@@ -1,0 +1,61 @@
+#medHead{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark_blue);
+}
+
+/* for searchbar */
+
+.searchbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchmed{
+    width: 50%;
+    height: 5vh;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(158, 158, 158, 0.272);
+}
+
+#searchbtn{
+    width: 10%;
+    height: 7vh;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    color: var(--dark_blue);
+    font-weight: bold;
+    background-color: var(--light_blue);
+}
+
+#searchbtn:hover{
+    background-color: var(--dark_blue);
+    color: white;
+    transition: 0.5s;
+}
+
+#results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results p{
+    margin: 5px;
+    font-size: 1rem;
+}

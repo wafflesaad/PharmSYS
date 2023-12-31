@@ -1,0 +1,60 @@
+body > h1{
+    text-align: center;
+    color: var(--dark_blue);
+    font-size: 3rem;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btns{
+    width: 10vw;
+    height: 7vh;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    color: var(--dark_blue);
+    font-weight: bold;
+    background-color: var(--light_blue);
+}
+
+.btns:hover{
+    background-color: var(--dark_blue);
+    color: white;
+    transition: 0.5s;
+}
+
+.formitm{
+    height: 5vh;
+    width: 20vw;
+    margin: 4px;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(158, 158, 158, 0.272);
+    border-radius: 1rem;
+}
+
+.restockcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

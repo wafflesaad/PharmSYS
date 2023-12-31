@@ -1,0 +1,124 @@
+#custhead{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark_blue);
+}
+
+.searchbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchcust{
+    width: 50%;
+    height: 5vh;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(158, 158, 158, 0.272);
+}
+
+.btns{
+    width: 10%;
+    height: 7vh;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    color: var(--dark_blue);
+    font-weight: bold;
+    background-color: var(--light_blue);
+}
+
+.btns:hover{
+    background-color: var(--dark_blue);
+    color: white;
+    transition: 0.5s;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#info p{
+    margin: 5px;
+}
+
+#addcust{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addcustbtn{
+    margin-top: 0;
+    width: 16% !important;
+    height: 8vh !important;
+}
+
+#custform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fcsubmit{
+    width: 13vw;
+}
+
+.formitm{
+    width: 25%;
+    margin: 8px;
+    height: 4vh;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: rgba(158, 158, 158, 0.272);
+}
+
+.addpres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addpresbtn{
+    width: 20vw;
+}
+
+.addpres form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prescfield{
+    width: 30vw !important;
+    height: 5vh;
+    font-size: 1rem;
+}
+
+#cnicfield{
+    width: 30vw !important;
+    height: 5vh;
+    font-size: 1rem;
+}
+
+#prescsubmit{
+    width: 15vw;
+}

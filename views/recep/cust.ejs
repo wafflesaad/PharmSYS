@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmSys</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/recep/cust.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/plus.png">
+
+</head>
+<body>
+    <nav>
+        <div id="navheading">
+            <h1 >PharmSys</h1>
+            <img src="/images/plus.png" alt="A Hospital Sign">
+        </div>
+        
+        <a class="navbtn" href="/recep/sell">Sell</a>
+        <a class="navbtn" href="/recep/med">Medicines</a>
+        <a class="navbtn" href="/recep/cust">Customers</a>
+
+        <a class="navbtn" href="/manager">Manager Mode</a>
+    </nav>
+
+    <div id="body">
+        <h1 id="custhead">Customers</h1>
+        <div class="searchbar">
+            <input type="number" min="0" placeholder="Enter Customer CNIC (without dashes)" name="searchcust" id="searchcust">
+            <p id="cnicerror"></p>
+            <button id="searchbtn" class="btns">Search</button>
+        </div>
+    </div>
+    <div id="info">
+        <p id="cname"></p>
+        <p id="cphone"></p>
+        <p id="caddress"></p>
+        <p id="cemail"></p>
+        <p id="cprescription"></p>
+    </div>    
+    <div id="addcust">
+        <button id="addcustbtn" class="btns">Add Customer</button>
+        <form method="post" action="/recep/cust/addCustomer" id="custform">
+            <input required class="formitm" type="text" id="fcname" name="customerName" placeholder="Name">
+            <input required class="formitm" type="number" min="0" id="fcphone" name="phone" placeholder="Phone Number">
+            <input required class="formitm" type="text" id="fcemail" name="email" placeholder="Email">
+            <input required class="formitm" type="text" id="fcaddress" name="address" placeholder="Address">
+            <input required class="formitm" type="number" min="1000000000000" max="9999999999999" id="fccnic" name="cnic" placeholder="CNIC (without dashes)"> 
+            <input type="submit" class="btns" value="Add" id="fcsubmit">
+        </form>
+    </div>
+
+    <div class="addpres">
+        <button id="addpresbtn" class="btns">Add Prescription</button>
+        <form id="prescform" method="post" action="/recep/cust/addpresc">
+            <input required class="formitm" type="text" id="prescfield" name="presc" placeholder="Prescription">
+            <input required class="formitm" type="number" min="1000000000000" max="9999999999999" id="cnicfield" name="cnic" placeholder="CNIC (without dashes)">
+            <input type="submit" class="btns" value="Add" id="prescsubmit">
+        </form>
+    </div>
+
+
+    <script src="/scripts/recep/cust.js"></script>
+</body>
+</html>

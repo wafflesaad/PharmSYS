@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmSys</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/recep/med.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/plus.png">
+
+</head>
+<body>
+    <nav>
+        <div id="navheading">
+            <h1 >PharmSys</h1>
+            <img src="/images/plus.png" alt="A Hospital Sign">
+        </div>
+        
+        <a class="navbtn" href="/recep/sell">Sell</a>
+        <a class="navbtn" href="/recep/med">Medicines</a>
+        <a class="navbtn" href="/recep/cust">Customers</a>
+
+        <a class="navbtn" href="/manager">Manager Mode</a>
+    </nav>
+
+    <section id="head">
+        <h1 id="medHead">Medicine</h1>
+        <div class="searchbar">
+            <input type="text" placeholder="Enter Medicine Name" name="searchmed" id="searchmed">
+            <button id="searchbtn">Search</button>
+        </div>
+    </section>
+
+    <div id="results">
+        <h2 id="rname"><%=name||" " %></h2>
+        <p id="rdesc"><%=description|| " "%></p>
+        <p id="rprice"><%=price || " "%></p>
+        <p id="rstock"><%=stock || " "%></p>
+        <p id="rnotfound"><%=notfound || " "%></p>
+    </div>
+
+    <script src="/scripts/recep/med.js"></script>
+
+</body>
+</html>

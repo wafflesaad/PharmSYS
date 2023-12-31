@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmSys</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/manager/addmed.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/plus.png">
+
+</head>
+<body>
+    <nav>
+        <div id="navheading">
+            <h1 >PharmSys</h1>
+            <img src="/images/plus.png" alt="A Hospital Sign">
+        </div>
+        
+        <a class="navbtn" href="/manager/addmed">Add Medicine</a>
+        <a class="navbtn" href="/manager/emp">Employees</a>
+        <a class="navbtn" href="/manager/sales">Sales</a>
+
+        <a class="navbtn" href="/recep">Receptionist</a>
+    </nav>
+    
+        <h1>Add Medicine</h1>
+        <div class="cont">
+            <form method="post" action="/manager/addmed/add" id="custform">
+                <input required class="formitm" name="medname" type="text" placeholder="Medicine Name" id="medname">
+                <input required class="formitm" name="meddesc" type="text" placeholder="Medicine Info" id="meddesc">
+                <input required class="formitm" name="medprice" type="number" placeholder="Price in Rs." min="0" id="medprice">
+                <input required class="formitm" name="medstock" type="number" placeholder="Stock" min="0" id="medstock">
+                <input required class="formitm" name="medman" type="text" placeholder="Manufacturer" id="medman">
+                <input required class="formitm" name="medpresc" type="text" placeholder="Prescription Required (yes or no)" id="medpresc">
+                <input class="btns" type="submit" placeholder="Add" id="medsubmit">
+            </form>
+            <p id="status"></p>
+        </div>
+        <div class="restockcont">
+            <button id="restockbtn" class="btns">Add Stock</button>
+
+            <form id="restockfields" method="post" action="/manager/addmed/restock">
+                <input required class="formitm" name="medname" type="text" placeholder="Medicine Name" id="restockname">
+                <input required class="formitm" name="medstock" type="number" placeholder="Stock" min="0" id="restockstock">
+                <input class="btns" type="submit" placeholder="Add" id="restocksubmit">
+            </form>
+
+        </div>    
+        <script src="/scripts/manager/addmed.js" ></script>
+</body>
+</html>

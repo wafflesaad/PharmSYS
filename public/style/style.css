@@ -1,0 +1,74 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --dark_blue: #335e90;
+    --light_blue: #87c6ec;
+    --dark_green: #5eba24;
+    --light_green: #c6e7c9;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* FOR NAVBAR */
+
+body{
+    background-image: url("/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+nav{
+    background-color: var(--light_blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navheading{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+    width: 40%;
+    /* margin: 0; */
+    
+    font-size: 2rem;
+    height: auto;
+    align-items: center;
+}
+
+#navheading h1{
+    margin-left: 20px;
+}
+
+#navheading img{
+    /* margin-top: 2.4vh; */
+    margin-left: 3%;
+    margin-top: 1.2vh;
+    height: 4rem;
+}
+
+
+.navbtn{
+    text-decoration: none;
+    padding: 13px;
+    background-color: var(--dark_blue);
+    border-radius: 20px;
+    margin: 2vw;
+    color: white;
+    width: 10%;
+    text-align: center;
+}
+
+.navbtn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* ending navbar */
+

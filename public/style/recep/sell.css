@@ -1,0 +1,84 @@
+#sellmed{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark_blue);
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item h2{
+    display: inline;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item input{
+    margin-left: 20px;
+    background-color: rgba(158, 158, 158, 0.272);
+    color: black;
+    border: 1px solid var(--dark_blue);
+    border-radius: 0.5rem;
+    height: 3vh;
+    width: 15vw;
+    padding: 2px;
+    text-align: center;
+}
+
+.item button{
+    width: 10vw;
+    height: 7vh;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_blue);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+    color: var(--dark_blue);
+    font-weight: bold;
+    background-color: var(--light_blue);
+}
+
+.item button:hover{
+    background-color: var(--dark_blue);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+
+/* billing */
+#bill{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bill > h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10vw;
+    justify-content: space-between;
+}
+
+.total h1{
+    display: inline;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmSys</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/manager/emp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/plus.png">
+
+</head>
+<body>
+    <nav>
+        <div id="navheading">
+            <h1 >PharmSys</h1>
+            <img src="/images/plus.png" alt="A Hospital Sign">
+        </div>
+        
+        <a class="navbtn" href="/manager/addmed">Add Medicine</a>
+        <a class="navbtn" href="/manager/emp">Employees</a>
+        <a class="navbtn" href="/manager/sales">Sales</a>
+
+        <a class="navbtn" href="/recep">Receptionist</a>
+    </nav>
+    
+    <div id="body">
+        <h1 id="emphead">Employees</h1>
+        <div class="searchbar">
+            <input type="number" min="1000000000000" max="9999999999999" placeholder="Enter Employee CNIC (without dashes)" id="searchemp">
+            <p id="cnicerror"></p>
+            <button id="searchbtn" class="btns">Search</button>
+        </div>
+    </div>
+    <div id="info">
+        <p id="ename"></p>
+        <p id="ephone"></p>
+        <p id="eaddress"></p>
+        <p id="eemail"></p>
+        <p id="epay"></p>
+        <p id="eclass"></p>
+    </div>    
+    <div id="addemp">
+        <button id="addempbtn" class="btns">Add Employee</button>
+        <form method="post" action="/manager/emp/add" id="empform">
+            <input class="formitm" type="text" id="fename" name="Name" placeholder="Name">
+            <input class="formitm" type="number" min="0" id="fephone" name="phone" placeholder="Phone Number">
+            <input class="formitm" type="text" id="feemail" name="email" placeholder="Email">
+            <input class="formitm" type="text" id="feaddress" name="address" placeholder="Address">
+            <input class="formitm" type="number" min="0" id="fepay" name="pay" placeholder="Pay"> 
+            <input class="formitm" type="text" id="feclass" name="classification" placeholder="Classification">
+            <input class="formitm" type="number" min="1000000000000" max="9999999999999" id="fecnnic" name="cnic" placeholder="Cnic (without dashes)"> 
+            <input type="submit" class="btns" value="Add" id="fesubmit">
+        </form>
+    </div>
+    <script src="/scripts/manager/emp.js"></script>
+    
+
+
+</body>
+</html>
